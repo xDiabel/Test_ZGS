@@ -1,0 +1,35 @@
+1 : Je n'ai pas réussis a utilisé le système de localisation d'UE
+
+---
+
+2 : L'interpolation de position / rotation / FOV se fait, avec le parametre pour le controle de rapidité,
+Je n'ai pas réussis a avoir une position/rotation correcte des cameras.
+Les positions relatives étant ZeroVector pour les deux cameras.
+(j'ai vérifié l'interpolation avec les valeurs World des cameras)
+
+---
+
+3.1 : N'ayant pas de UPROPERTY, le GC peut supprimer Bar de la mémoire.
+Et étant appelé dans le tick, il peut produire un NullPointerException
+
+
+3.2 :
+
+
+3.3 : En définissant le type de T a int32/float/double
+Je n'ai cependant, aucune idée de comment contraindre T en int32 ET float ET double.
+
+
+3.4
+
+class A
+{
+public:
+virtual void PolymorphicMethod();
+};
+
+class B : public A
+{
+public:
+virtual void PolymorphicMethod() override;
+}
